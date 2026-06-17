@@ -3,6 +3,7 @@
     "private": true,
     "version": "1.2.1",
     "type": "module",
+    "packageManager": "pnpm@11.7.0",
     "description": "Multilingual Astro starter with URL localization and i18n support",
     "author": {
         "name": "Nik Klemenc",
