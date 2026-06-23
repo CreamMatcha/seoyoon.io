@@ -4,12 +4,12 @@ import { z } from "astro/zod";
 // Same pattern as the client-side validation in [contact]/[...index].astro
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 import en from "@/locales/en/contact.json";
-import sl from "@/locales/sl/contact.json";
+import ko from "@/locales/ko/contact.json";
 
 // Success messages live in the locale files (single source of truth)
-const funkyMessages: Record<"en" | "sl", string[]> = {
+const funkyMessages: Record<"en" | "ko", string[]> = {
     en: en.funky,
-    sl: sl.funky,
+    ko: ko.funky,
 };
 
 export const server = {
@@ -31,7 +31,7 @@ export const server = {
                 .string({ error: "messageRequired" })
                 .trim()
                 .min(10, "messageMin"),
-            lang: z.enum(["en", "sl"]).catch("en"),
+            lang: z.enum(["en", "ko"]).catch("en"),
             // Honeypot — humans never see this field, bots fill it
             website: z.string().nullish(),
         }),

@@ -16,12 +16,12 @@
         },
         "languages": {
             "en": "English",
-            "sl": "Slovenian"
+            "ko": "Korean"
         }
     },
     "footer": {
-        "description": "Astro i18n Starter Kit",
-        "name": "Nik Klemenc",
+        "description": "Seoyoon's technical blog",
+        "name": "Seoyoon",
         "copy": "Copyright",
         "made": "Made with {{what}}",
         "index": "Table of Contents",

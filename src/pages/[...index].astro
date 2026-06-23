@@ -11,8 +11,8 @@ export function getStaticPaths() {
             props: { lang: "en" },
         },
         {
-            params: { index: `sl/` },
-            props: { lang: "sl" },
+            params: { index: `ko/` },
+            props: { lang: "ko" },
         },
     ];
 }
@@ -39,32 +39,5 @@ const t = useTranslations(lang);
         <p class="mb-4 text-center">
             {t("main:intro")}
         </p>
-
-        {
-            t("main:features").map((section: any, key: number) => (
-                <>
-                    <hr aria-hidden="true" />
-                    <section aria-labelledby={`features-title-${key}`}>
-                        <h2 id={`features-title-${key}`}>{section.title}</h2>
-                        <ul aria-label={section.title}>
-                            {section.list.map((item: any) => (
-                                <li set:html={item.p} />
-                            ))}
-                        </ul>
-                        {section.github && (
-                            <a
-                                href="https://github.com/Scorpio3310/astro-i18n-starter"
-                                aria-label="GitHub Astro i18n Starter"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="button w-fit mt-4"
-                            >
-                                {section.github} →
-                            </a>
-                        )}
-                    </section>
-                </>
-            ))
-        }
     </section>
 </Base>

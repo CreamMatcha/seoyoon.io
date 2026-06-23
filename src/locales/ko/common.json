@@ -1,0 +1,38 @@
+{
+    "menu": {
+        "list": {
+            "home": "홈",
+            "about": "소개",
+            "pages": "페이지",
+            "dynamicRouting": "다이내믹 라우팅",
+            "subpage-1": "서브페이지 1",
+            "subpage-2": "서브페이지 2",
+            "blog": "블로그",
+            "pagination": "페이지네이션",
+            "contact": "문의"
+        },
+        "languagesText": {
+            "selectLanguage": "언어 선택"
+        },
+        "languages": {
+            "en": "영어",
+            "ko": "한국어"
+        }
+    },
+    "footer": {
+        "description": "서윤의 기술 블로그",
+        "name": "Seoyoon",
+        "copy": "Copyright",
+        "made": "{{what}}로 제작",
+        "index": "목차",
+        "backToHome": "홈으로 돌아가기"
+    },
+    "pageNotFound": {
+        "head": {
+            "title": "🔍 404",
+            "description": "이런! 이 페이지는 휴가를 떠났어요"
+        },
+        "title": "🔍 404 - 이런! 이 페이지는 휴가를 떠났어요",
+        "link": "홈으로 돌아가기"
+    }
+}

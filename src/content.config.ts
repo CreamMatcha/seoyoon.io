@@ -30,7 +30,7 @@ const authors = defineCollection({
             image: image(),
             position: z.object({
                 en: z.string(),
-                sl: z.string(),
+                ko: z.string(),
             }),
         }),
 });

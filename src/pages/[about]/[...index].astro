@@ -13,13 +13,13 @@ export function getStaticPaths() {
             params: { about: "about", index: undefined },
             props: { lang: "en" },
         },
-        // Slovenian route: /sl/o-projektu
-        // [about] = "sl" acts as language prefix in URL
-        // [...index] = "o-projektu" captures the localized page name after /sl/
-        // This creates the final URL: /sl/o-projektu
+        // Korean route: /ko/about
+        // [about] = "ko" acts as language prefix in URL
+        // [...index] = "about" reuses the English page name after /ko/
+        // This creates the final URL: /ko/about
         {
-            params: { about: "sl", index: "o-projektu" },
-            props: { lang: "sl" },
+            params: { about: "ko", index: "about" },
+            props: { lang: "ko" },
         },
     ];
 }

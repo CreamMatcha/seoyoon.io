@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 //---------------------------------- EXPORTS ----------------------------------//
 /**
  * Extracts language code from URL path
- * Example: "/sl/about" -> "sl", "/about" -> "en" (defaultLang)
+ * Example: "/ko/about" -> "ko", "/about" -> "en" (defaultLang)
  */
 export function getLangFromUrl(url: URL) {
     const [, lang] = url.pathname.split("/");
@@ -57,7 +57,7 @@ export function useTranslations(lang: keyof typeof ui) {
 
 /**
  * Returns path translation function for specific language
- * Translates routes like "about" -> "o-projektu" for Slovenian
+ * Translates routes per the `routes` map for languages that use localized slugs
  */
 export function useTranslatedPath(lang: keyof typeof ui) {
     return function translatePath(path: string, l: string = lang) {
@@ -187,7 +187,7 @@ async function findContentGroup(collectionId: string): Promise<string | null> {
  * Checks if route is a blog route in any language
  */
 function isBlogRoute(route: string): boolean {
-    return route === "blog" || route === "spletni-dnevnik";
+    return route === "blog";
 }
 
 /**
@@ -199,7 +199,7 @@ function getLangCode(lang: string): string {
 
 /**
  * Handles language switching for blog posts using content links mapping
- * Maps between different slugs per language (e.g., security-trends <-> varnostni-trendi)
+ * Maps between different slugs per language via the `linkedContent` frontmatter field
  */
 async function handleBlogPostTranslation(
     currentLang: string,
@@ -231,8 +231,7 @@ async function handleBlogPostTranslation(
 }
 
 /**
- * Finds original route name from translated route
- * Example: "spletni-dnevnik" -> "blog"
+ * Finds original route name from a translated route, via the `routes` map
  */
 function getOriginalRouteName(routeName: string): string {
     for (const routeMap of Object.values(routes)) {
@@ -246,7 +245,7 @@ function getOriginalRouteName(routeName: string): string {
 
 /**
  * Translates route name to target language
- * Example: "blog" + "sl" -> "spletni-dnevnik"
+ * Example: "blog" + "ko" -> "blog" (English slug reused; no localized routes for ko)
  */
 function translateRouteName(routeName: string, targetLang: string): string {
     const originalRoute = getOriginalRouteName(routeName);

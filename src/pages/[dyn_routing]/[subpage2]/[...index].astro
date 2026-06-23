@@ -20,18 +20,18 @@ export function getStaticPaths() {
             },
             props: { lang: "en" },
         },
-        // Slovenian route: /sl/dinamicno-usmerjanje/podstran-2
-        // [dyn_routing] = "sl" acts as language prefix in URL
-        // [subpage2] = "dinamicno-usmerjanje" is the localized "dynamic-routing" path
-        // [...index] = "podstran-2" captures the localized subpage name
-        // This creates the final URL: /sl/dinamicno-usmerjanje/podstran-2
+        // Korean route: /ko/dynamic-routing/subpage-2
+        // [dyn_routing] = "ko" acts as language prefix in URL
+        // [subpage2] = "dynamic-routing" reuses the English "dynamic-routing" path
+        // [...index] = "subpage-2" reuses the English subpage name
+        // This creates the final URL: /ko/dynamic-routing/subpage-2
         {
             params: {
-                dyn_routing: "sl",
-                subpage2: "dinamicno-usmerjanje",
-                index: "podstran-2",
+                dyn_routing: "ko",
+                subpage2: "dynamic-routing",
+                index: "subpage-2",
             },
-            props: { lang: "sl" },
+            props: { lang: "ko" },
         },
     ];
 }
@@ -73,18 +73,18 @@ export function getStaticPaths() {
             },
             props: { lang: "en" },
         },
-        // Slovenian route: /sl/dinamicno-usmerjanje/podstran-2
-        // [dyn_routing] = "sl" acts as language prefix in URL
-        // [subpage2] = "dinamicno-usmerjanje" is the localized "dynamic-routing" path
-        // [...index] = "podstran-2" captures the localized subpage name
-        // This creates the final URL: /sl/dinamicno-usmerjanje/podstran-2
+        // Korean route: /ko/dynamic-routing/subpage-2
+        // [dyn_routing] = "ko" acts as language prefix in URL
+        // [subpage2] = "dynamic-routing" reuses the English "dynamic-routing" path
+        // [...index] = "subpage-2" reuses the English subpage name
+        // This creates the final URL: /ko/dynamic-routing/subpage-2
         {
             params: {
-                dyn_routing: "sl",
-                subpage2: "dinamicno-usmerjanje",
-                index: "podstran-2",
+                dyn_routing: "ko",
+                subpage2: "dynamic-routing",
+                index: "subpage-2",
             },
-            props: { lang: "sl" },
+            props: { lang: "ko" },
         },
     ];
 }`}</code></pre>

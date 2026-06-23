@@ -16,12 +16,12 @@ export function getStaticPaths() {
             params: { blog: "/blog" },
             props: { lang: "en" },
         },
-        // Slovenian route: /sl/spletni-dnevnik
-        // [...blog] = "/sl/spletni-dnevnik" captures both language prefix and localized path
-        // Creates URL: /sl/spletni-dnevnik ("spletni-dnevnik" = "blog" in Slovenian)
+        // Korean route: /ko/blog
+        // [...blog] = "/ko/blog" captures both language prefix and the (English) blog slug
+        // Creates URL: /ko/blog
         {
-            params: { blog: "/sl/spletni-dnevnik" },
-            props: { lang: "sl" },
+            params: { blog: "/ko/blog" },
+            props: { lang: "ko" },
         },
     ];
 }
@@ -30,8 +30,8 @@ export function getStaticPaths() {
 // If this file was in [blog] folder and renamed to [...index.astro]
 // it would work like [blog]/[...index.astro] with these route configurations:
 //
-// English:   { params: { blog: "blog", index: undefined }, props: { lang: "en" } } → /blog
-// Slovenian: { params: { blog: "sl", index: "strani" }, props: { lang: "sl" } } → /sl/spletni-dnevnik
+// English: { params: { blog: "blog", index: undefined }, props: { lang: "en" } } → /blog
+// Korean:  { params: { blog: "ko", index: "blog" }, props: { lang: "ko" } } → /ko/blog
 
 // Props
 const { lang } = Astro.props;
@@ -59,7 +59,7 @@ const authors = authorsRaw.map((a) => ({
     data: {
         ...a.data,
         position:
-            a.data.position?.[lang as "en" | "sl"] ??
+            a.data.position?.[lang as "en" | "ko"] ??
             a.data.position?.en ??
             "",
     },

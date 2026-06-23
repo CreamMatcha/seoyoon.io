@@ -5,7 +5,7 @@ linkedContent: "ai-in-education"
 description: "How Artificial Intelligence is changing the way we teach, learn, and evaluate knowledge in classrooms and beyond."
 keywords: "artificial intelligence, education technology, AI in classroom, machine learning, educational AI, personalized learning, EdTech, digital transformation"
 
-author: "Nik Klemenc"
+author: "Seoyoon"
 pubDate: 2025-07-22
 isDraft: false
 

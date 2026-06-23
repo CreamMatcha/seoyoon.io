@@ -5,7 +5,7 @@ linkedContent: "blockchain-beyond-crypto"
 description: "An exploration of how blockchain is moving beyond cryptocurrency to reshape industries like healthcare, logistics, and digital identity."
 keywords: "blockchain technology, distributed ledger, digital transformation, healthcare technology, supply chain, digital identity, smart contracts, decentralized systems"
 
-author: "Nik Klemenc"
+author: "Seoyoon"
 pubDate: 2025-06-14
 isDraft: false
 

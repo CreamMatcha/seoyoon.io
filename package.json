@@ -1,18 +1,17 @@
 {
-    "name": "astro-i18n-starter",
+    "name": "seoyoon-io",
     "private": true,
     "version": "1.2.1",
     "type": "module",
     "packageManager": "pnpm@11.7.0",
-    "description": "Multilingual Astro starter with URL localization and i18n support",
+    "description": "Seoyoon's personal technical blog",
     "author": {
-        "name": "Nik Klemenc",
-        "url": "https://klemenc.si"
+        "name": "Seoyoon"
     },
-    "homepage": "https://klemenc.si",
+    "homepage": "https://seoyoon.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Scorpio3310/astro-i18n-starter"
+        "url": "https://github.com/CreamMatcha/seoyoon.io"
     },
     "license": "MIT",
     "keywords": [

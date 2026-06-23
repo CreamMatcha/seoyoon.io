@@ -26,10 +26,10 @@ export const getStaticPaths = (async ({ paginate }) => {
             page: undefined as string | undefined,
         },
         {
-            code: "sl" as const,
-            prefix: "sl/",
-            pagination: "sl",
-            page: "spletni-dnevnik-paginacija",
+            code: "ko" as const,
+            prefix: "ko/",
+            pagination: "ko",
+            page: "blog-pagination",
         },
     ];
 
@@ -53,14 +53,14 @@ export const getStaticPaths = (async ({ paginate }) => {
 
         const pages = paginate(filtered, {
             pageSize: PAGE_SIZE,
-            // Fixed segment before the catch-all ("blog-pagination" or "sl")
+            // Fixed segment before the catch-all ("blog-pagination" or "ko")
             params: { pagination },
             // Extra props for every page
             props: { lang: code, authors },
         });
 
-        // For Slovenian, first page: /sl/spletni-dnevnik-paginacija
-        // Next pages: /sl/spletni-dnevnik-paginacija/2, ...
+        // For Korean, first page: /ko/blog-pagination
+        // Next pages: /ko/blog-pagination/2, ...
         // For English, first page: /blog-pagination; next: /blog-pagination/2
         return pages.map((p) => {
             const current = (p.props as any)?.page?.currentPage ?? 1;

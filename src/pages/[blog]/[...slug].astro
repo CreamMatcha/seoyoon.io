@@ -16,13 +16,13 @@ export const getStaticPaths = (async () => {
     // Define language configurations
     const langConfigs = {
         en: { prefix: "en/", blogPath: "/blog" },
-        sl: { prefix: "sl/", blogPath: "/sl/spletni-dnevnik" },
+        ko: { prefix: "ko/", blogPath: "/ko/blog" },
     };
 
     // Create paths for each post in each language
     const createPath = (
         post: (typeof posts)[number],
-        lang: "en" | "sl",
+        lang: "en" | "ko",
         blogPath: string,
     ) => {
         const author = authorsRaw.find((a) => a.id === post.data.author.id);
@@ -47,7 +47,7 @@ export const getStaticPaths = (async () => {
     return Object.entries(langConfigs).flatMap(([lang, { prefix, blogPath }]) =>
         posts
             .filter((post) => post.id.startsWith(prefix))
-            .map((post) => createPath(post, lang as "en" | "sl", blogPath))
+            .map((post) => createPath(post, lang as "en" | "ko", blogPath))
     );
 }) satisfies GetStaticPaths;
 

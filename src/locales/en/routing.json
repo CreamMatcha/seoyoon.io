@@ -15,7 +15,7 @@
                 "keywords": "Astro dynamic routing, rest parameters, nested routing, i18n routing, multilingual URLs, getStaticPaths, file structure"
             },
             "title": "Rest Parameters [...subpage1].astro",
-            "description": "This subpage demonstrates the implementation of dynamic routing in an Astro project with internationalization. It uses URL structure <span>/dynamic-routing/subpage-1</span> for English, which automatically converts to the Slovenian version <span>/sl/dinamicno-usmerjanje/podstran-1</span>. Below you can see the actual code that enables this functionality."
+            "description": "This subpage demonstrates the implementation of dynamic routing in an Astro project with internationalization. It uses URL structure <span>/dynamic-routing/subpage-1</span> for English, which automatically converts to the Korean version <span>/ko/dynamic-routing/subpage-1</span>. Below you can see the actual code that enables this functionality."
         },
         "subpage-2": {
             "head": {
@@ -24,7 +24,7 @@
                 "keywords": "Astro dynamic routing, rest parameters, nested routing, i18n routing, multilingual URLs, getStaticPaths, file structure"
             },
             "title": "Nested Routing [subpage2]/[...index].astro",
-            "description": "This subpage demonstrates the implementation of dynamic routing in an Astro project with internationalization. It uses URL structure <span>/dynamic-routing/subpage-2</span> for English, which automatically converts to the Slovenian version <span>/sl/dinamicno-usmerjanje/podstran-2</span>. Below you can see the actual code that enables this functionality."
+            "description": "This subpage demonstrates the implementation of dynamic routing in an Astro project with internationalization. It uses URL structure <span>/dynamic-routing/subpage-2</span> for English, which automatically converts to the Korean version <span>/ko/dynamic-routing/subpage-2</span>. Below you can see the actual code that enables this functionality."
         }
     }
 }

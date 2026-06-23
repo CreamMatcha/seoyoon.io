@@ -18,15 +18,15 @@ export function getStaticPaths() {
             },
             props: { lang: "en" },
         },
-        // Slovenian route: /sl/dinamicno-usmerjanje/podstran-1
-        // [...subpage1] = "podstran-1" captures the localized subpage name
-        // This creates the final URL: /sl/dinamicno-usmerjanje/podstran-1
+        // Korean route: /ko/dynamic-routing/subpage-1
+        // [...subpage1] = "subpage-1" reuses the English subpage name
+        // This creates the final URL: /ko/dynamic-routing/subpage-1
         {
             params: {
-                dyn_routing: "/sl/dinamicno-usmerjanje",
-                subpage1: "podstran-1",
+                dyn_routing: "/ko/dynamic-routing",
+                subpage1: "subpage-1",
             },
-            props: { lang: "sl" },
+            props: { lang: "ko" },
         },
     ];
 }
@@ -66,15 +66,15 @@ export function getStaticPaths() {
             },
             props: { lang: "en" },
         },
-        // Slovenian route: /sl/dinamicno-usmerjanje/podstran-1
-        // [...subpage1] = "podstran-1" captures the localized subpage name
-        // This creates the final URL: /sl/dinamicno-usmerjanje/podstran-1
+        // Korean route: /ko/dynamic-routing/subpage-1
+        // [...subpage1] = "subpage-1" reuses the English subpage name
+        // This creates the final URL: /ko/dynamic-routing/subpage-1
         {
             params: {
-                dyn_routing: "/sl/dinamicno-usmerjanje",
-                subpage1: "podstran-1",
+                dyn_routing: "/ko/dynamic-routing",
+                subpage1: "subpage-1",
             },
-            props: { lang: "sl" },
+            props: { lang: "ko" },
         },
     ];
 }`}</code></pre>

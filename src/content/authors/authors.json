@@ -1,11 +1,11 @@
 [
     {
-        "id": "Nik Klemenc",
-        "name": "Nik Klemenc",
+        "id": "Seoyoon",
+        "name": "Seoyoon",
         "image": "./user.png",
         "position": {
-            "en": "UX/UI Designer & Front-End Developer",
-            "sl": "UX/UI Oblikovalec & Front-end Razvijalec"
+            "en": "Writer & Developer",
+            "ko": "글쓴이 & 개발자"
         }
     }
 ]

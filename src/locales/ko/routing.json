@@ -1,0 +1,30 @@
+{
+    "head": {
+        "title": "다이내믹 라우팅",
+        "description": "Astro 프로젝트에서 다양한 파일 구조로 구현하는 다이내믹 라우팅 예시입니다.",
+        "keywords": "Astro 다이내믹 라우팅, rest 파라미터, 중첩 라우팅, i18n 라우팅, 다국어 URL, getStaticPaths, 파일 구조"
+    },
+    "title": "다이내믹 라우팅",
+    "description": "rest 파라미터와 중첩 폴더를 이용해 다이내믹 라우팅을 구현하는 다양한 방법을 살펴볼 수 있습니다.",
+    "link": "페이지 열기",
+    "subpages": {
+        "subpage-1": {
+            "head": {
+                "title": "다이내믹 라우팅 - 서비스 1",
+                "description": "다국어 웹사이트를 위한 i18n 지원 다이내믹 라우팅 구현 예시",
+                "keywords": "Astro 다이내믹 라우팅, rest 파라미터, 중첩 라우팅, i18n 라우팅, 다국어 URL, getStaticPaths, 파일 구조"
+            },
+            "title": "Rest 파라미터 [...subpage1].astro",
+            "description": "이 서브페이지는 국제화(i18n)를 적용한 Astro 프로젝트에서 다이내믹 라우팅을 구현하는 방법을 보여줍니다. 영어에서는 <span>/dynamic-routing/subpage-1</span> 형태의 URL 구조를 사용하며, 이는 한국어 버전인 <span>/ko/dynamic-routing/subpage-1</span>로 자동 변환됩니다. 아래에서 이를 가능하게 하는 실제 코드를 확인할 수 있습니다."
+        },
+        "subpage-2": {
+            "head": {
+                "title": "다이내믹 라우팅 - 서브페이지 2",
+                "description": "다국어 웹사이트를 위한 i18n 지원 다이내믹 라우팅 구현 예시",
+                "keywords": "Astro 다이내믹 라우팅, rest 파라미터, 중첩 라우팅, i18n 라우팅, 다국어 URL, getStaticPaths, 파일 구조"
+            },
+            "title": "중첩 라우팅 [subpage2]/[...index].astro",
+            "description": "이 서브페이지는 국제화(i18n)를 적용한 Astro 프로젝트에서 다이내믹 라우팅을 구현하는 방법을 보여줍니다. 영어에서는 <span>/dynamic-routing/subpage-2</span> 형태의 URL 구조를 사용하며, 이는 한국어 버전인 <span>/ko/dynamic-routing/subpage-2</span>로 자동 변환됩니다. 아래에서 이를 가능하게 하는 실제 코드를 확인할 수 있습니다."
+        }
+    }
+}

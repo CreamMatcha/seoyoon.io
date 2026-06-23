@@ -13,13 +13,13 @@ export function getStaticPaths() {
             params: { dyn_routing: "dynamic-routing", index: undefined },
             props: { lang: "en" },
         },
-        // Slovenian route: /sl/dinamicno-usmerjanje
-        // [dyn_routing] = "sl" acts as language prefix in URL
-        // [...index] = "dinamicno-usmerjanje" captures the localized page name after /sl/
-        // This creates the final URL: /sl/dinamicno-usmerjanje
+        // Korean route: /ko/dynamic-routing
+        // [dyn_routing] = "ko" acts as language prefix in URL
+        // [...index] = "dynamic-routing" reuses the English page name after /ko/
+        // This creates the final URL: /ko/dynamic-routing
         {
-            params: { dyn_routing: `sl`, index: "dinamicno-usmerjanje" },
-            props: { lang: "sl" },
+            params: { dyn_routing: `ko`, index: "dynamic-routing" },
+            props: { lang: "ko" },
         },
     ];
 }
